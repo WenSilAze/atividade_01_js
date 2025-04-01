@@ -12,6 +12,8 @@
 <h2>Você pode usar o Math.max.aplly para achar o maior número de um array:</h2>
 
 <p>O maior número é <span id="demo1"></span>.</p>
+<br>
+<p>O maior número é <span id="demo3"></span></p>
 
 <script>
 const points = [40, 100, 1, 5, 25, 10];
@@ -20,8 +22,8 @@ document.getElementById("demo").innerHTML = myArrayMin(points);
 function myArrayMin(arr) {
   return Math.min.apply(null, arr);
 }
-const points2 = [40, 100, 1, 5, 25, 10];
-document.getElementById("demo2").innerHTML = myArrayMin(points);
+const points2 = [2, 3, 4, 5, 6, 10];
+document.getElementById("demo2").innerHTML = myArrayMin(points2);
 
 function myArrayMin(arr) {
   return Math.min.apply(null, arr);
@@ -32,7 +34,7 @@ document.getElementById("demo1").innerHTML = myArrayMax(points1);
 function myArrayMax(arr) {
   return Math.max.apply(null, arr);
 }
-const points3 = [40, 100, 1, 5, 25, 10];
+const points3 = [400, 100, 10, 5, 25, 10];
 document.getElementById("demo3").innerHTML = myArrayMax(points3);
 function myArrayMax(arr) {
     return Math.max.apply(null, arr);
